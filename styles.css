@@ -48,26 +48,39 @@ p {
   line-height: 1.5;
 }
 
-.about-section {
+.content-container {
   padding: 60px 20px;
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 54px;
   line-height: 80px;
   }
 
-.about-section h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--primary-font);
 }
 
-.about-section-content {
+.content h3 {
+  font-size: 24px;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  /* margin: 20px 0 0; */
+}
+
+.content p {
+  /* margin: 0;
+  padding: 0; */
+  font-size: 14px;
+}
+
+.content {
   /* margin: 30px; */
   margin: 0px;
 }
 
-.hero .btn-main, .about-section .btn-main {
+.hero .btn-main, .content-container .btn-main {
   background-color: var(--button-color);
   color: #FFFF;
   border: var(--button-color);
@@ -109,7 +122,7 @@ a.btn-outline {
     padding: 80px 20px;
   }
 
-  .about-section {
+  .content {
     text-align: center;
     padding: 0;
   }
