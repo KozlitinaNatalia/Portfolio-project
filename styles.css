@@ -1,11 +1,16 @@
 :root {
-  --button-color: #6C63FF;
-  --background-color: #F9F7FE;
-  --primary-font: 'Poppins', sans-serif;
-  --secondary-font: 'Playfair Display', serif;
+  --button-color: #6c63ff;
+  --background-color: #f9f7fe;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Playfair Display", serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000000;
   font-family: var(--secondary-font);
   font-weight: bold;
@@ -55,7 +60,7 @@ p {
 .content h1 {
   font-size: 54px;
   line-height: 80px;
-  }
+}
 
 .content h2 {
   font-size: 18px;
@@ -80,9 +85,10 @@ p {
   margin: 0px;
 }
 
-.hero .btn-main, .content-container .btn-main {
+.hero .btn-main,
+.content-container .btn-main {
   background-color: var(--button-color);
-  color: #FFFF;
+  color: #ffff;
   border: var(--button-color);
   padding: 18px 30px;
   border-radius: 4px;
@@ -104,11 +110,42 @@ a.btn-outline {
 }
 
 .project-description {
-  /* padding: 40px 60px; */
   padding: 80px 60px;
 }
 
-@media(max-width: 980px) {
+.logo {
+  /* max-width: 150px; */
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--button-color);
+}
+
+@media (max-width: 980px) {
   .hero h1 {
     font-size: 44px;
     margin-top: 20px;
@@ -130,5 +167,8 @@ a.btn-outline {
   .project-description {
     padding: 10px;
     text-align: center;
+  }
+  nav a {
+    font-size: 12px;
   }
 }
