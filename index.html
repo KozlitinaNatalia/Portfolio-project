@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nataliia Kozlitina is a front-end developer, based in Turkiye"
+    />
     <title>Front-end developer Nataliia Kozlitina</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -27,38 +31,42 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            >
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="work.html">Work</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="./index.html" title="Homepage">
+          <img
+            src="images/logo.png"
+            class="logo d-none d-md-block"
+            alt="SheCodes logo"
+          />
+          <img
+            src="images/small_logo.png"
+            class="logo d-block d-md-none"
+            alt="SheCodes small logo"
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="./index.html" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="./about.html" title="About Nataliia">About</a>
+          </li>
+          <li>
+            <a href="./work.html" title="Nataliia's work">Work</a>
+          </li>
+          <li>
+            <a href="./contact.html" title="Contact Nataliia">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="hero">
       <p>👋 Hello, I am</p>
       <h1>Nataliia Kozlitina</h1>
       <h2 class="mb-5">Front-end developer based in Turkiye</h2>
       <div>
-        <a href="#" class="btn btn-main">Get Started</a>
+        <a href="./contact.html" class="btn btn-main" title="Contact button">Contact me</a>
       </div>
     </div>
     <p class="text-center m-5">My projects</p>
@@ -68,7 +76,7 @@
           <img
             src="images/cro_app.png"
             class="img-fluid p-2 shadow rounded"
-            alt="Croissant app"
+            alt="Croissant project"
           />
         </div>
         <div class="col">
@@ -80,7 +88,7 @@
               corrupti sed, cum, eaque porro aspernatur ea modi unde illum eum
               enim!
             </p>
-            <a href="#" class="btn btn-outline"> Learn more </a>
+            <a href="./work.html" class="btn btn-outline"> Learn more </a>
           </div>
         </div>
       </div>
@@ -94,14 +102,14 @@
               corrupti sed, cum, eaque porro aspernatur ea modi unde illum eum
               enim!
             </p>
-            <a href="#" class="btn btn-outline"> Learn more </a>
+            <a href="./work.html" class="btn btn-outline" title="Button"> Learn more </a>
           </div>
         </div>
         <div class="col d-none d-lg-block">
           <img
             src="images/ch_app.png"
             class="img-fluid p-2 shadow rounded"
-            alt="Cheese app"
+            alt="Cheese project"
           />
         </div>
       </div>
@@ -110,7 +118,7 @@
           <img
             src="images/weather_app.png"
             class="img-fluid p-2 shadow rounded"
-            alt="Weather app"
+            alt="Weather project"
           />
         </div>
         <div class="col">
@@ -122,36 +130,48 @@
               corrupti sed, cum, eaque porro aspernatur ea modi unde illum eum
               enim!
             </p>
-            <a href="#" class="btn btn-outline"> Learn more </a>
+            <a href="./work.html" class="btn btn-outline" title="Button"> Learn more </a>
           </div>
         </div>
       </div>
       <footer>
         <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
           <div>
-            <h4>Work Inquiry</h4>
+            <h3>Work Inquiry</h3>
             <p class="text-muted">Let's work together</p>
           </div>
           <div>
-            <a href="" class="btn btn-main mt-3">Contact me</a>
+            <a href="./contact.html" class="btn btn-main mt-3" title="Button">Contact me</a>
           </div>
         </div>
         <div class="d-flex justify-content-center mb-5">
-          <a href="mailto:kozlitinanatalia.e@gmail.com" class="email-link">
+          <a
+            href="mailto:kozlitinanatalia.e@gmail.com"
+            class="email-link"
+            title="Email link"
+          >
             kozlitinanatalia.e@gmail.com</a
           >
         </div>
         <div class="social-links d-flex justify-content-center">
-          <a href="https://github.com/KozlitinaNatalia" target="_blank">
+          <a
+            href="https://github.com/KozlitinaNatalia"
+            target="_blank"
+            title="GitHub link"
+          >
             <i class="fa-brands fa-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/nataliia-kozlitina-b64582243"
             target="_blank"
+            title="Linkedin link"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
+        <p class="text-center mt-5">
+          This project was coded by Nataliia Kozlitina, and it is <a href="https://github.com/KozlitinaNatalia/Portfolio-project" target="_blank">open-sourced</a>
+        </p>
       </footer>
     </div>
   </body>
